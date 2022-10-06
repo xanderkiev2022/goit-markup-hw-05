@@ -278,32 +278,28 @@ img {
     display: flex;
 }
 
-.advantages-list .item {
+.advantages-list .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+/* Альтернативний марджин в 1му рядку: все окрім останнього */
+/* .advantages-list .item {
     margin-right: 30px;
 }
 
 .advantages-list .item:nth-last-child(1) {
     margin-right: 0px;
-}
-
-/* Альтернативний марджин в 1му рядку: все окрім останнього */
-/* .advantages-list .item:not(:last-child) {
-    margin-right: 30px;
 } */
 
 .advantages-svg {
     display: flex;
-    height: 120px;
+    min-height: 120px;    
     justify-content: center;
     align-items: center;
     margin-bottom: 25px;
     background-color: var(--team-buttons-background-color);
     border-radius: 4px;
     /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
-}
-
-.advantages-list .item+.item {
-    margin-left: 30px;
 }
 
 /* Duty+Team */
